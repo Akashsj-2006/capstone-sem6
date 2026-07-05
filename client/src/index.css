@@ -1,0 +1,35 @@
+/* GLOBAL RESET + BASE */
+
+:root {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: white;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* CENTER APP */
+#root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: #60a5fa;
+}
+
+a:hover {
+  color: #3b82f6;
+}
