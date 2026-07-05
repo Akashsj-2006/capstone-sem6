@@ -11,10 +11,7 @@ function Train() {
     const formData = new FormData()
     formData.append("file", file)
 
-    const response = await axios.post(
-      "http://localhost:5000/train",
-      formData
-    )
+    const response = await axios.post("https://egg-classifier.onrender.com/train", formData)
 
     setResult(response.data)
   }

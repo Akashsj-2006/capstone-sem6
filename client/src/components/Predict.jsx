@@ -11,10 +11,7 @@ function Predict() {
     const formData = new FormData()
     formData.append("file", file)
 
-    const response = await axios.post(
-      "http://localhost:5000/predict",
-      formData
-    )
+    const response = await axios.post("https://egg-classifier.onrender.com/predict", formData)
 
     setResult(response.data)
   }
