@@ -15,10 +15,7 @@ function PredictPage(){
 
     try{
 
-      const res = await axios.post(
-        "http://localhost:5000/predict",
-        formData
-      )
+      const res = await axios.post("https://egg-classifier.onrender.com/predict", formData)
 
       setPredictions(res.data.predictions)
 
